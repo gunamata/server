@@ -1,0 +1,40 @@
+{
+  "name": "app-server",
+  "version": "1.0.0",
+  "description": "App REST API Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "SET NODE_ENV=dev && node server.js",
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunamata/finn-assessment-level1-app-server.git"
+  },
+  "author": "matamagu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunamata/finn-assessment-level1-app-server/issues"
+  },
+  "homepage": "https://github.com/gunamata/finn-assessment-level1-app-server#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "config": "^1.20.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "morgan": "^1.9.1",
+    "supertest": "^4.0.2",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
